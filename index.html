@@ -6,87 +6,98 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div id="container">
+
         <header>
             <h1>Le jeu du memory</h1>
         </header>
+
         <aside>
+
             <p>Nombre de coups jouées : </p>
             <span id="score"></span>
 
             <form id="formulaire">
-                <input type="button" value="Recommencer le jeu" onclick="recommencer(true);">
-                <select id="selection" onchange="theme(this);">
+                <input type="button" value="Recommencer le jeu">
+                <select id="selection">
+                    <!--12 cards-->
                     <option value="defaut" selected="">Princesse</option>
                     <option value="alternatif">Lol manga</option>
                 </select>
             </form>
+
         </aside>
+
         <section>
+
             <div class="game">
-                <div id="c1">
-                    <img id="i1" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c1" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c2">
-                    <img id="i2" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c2" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c3">
-                    <img id="i3" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+               <div class="cards">
+                    <img id="c3" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c4">
-                    <img id="i4" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c4" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c5">
-                    <img id="i5" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c5" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c6">
-                    <img id="i6" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c6" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c7">
-                    <img id="i7" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c7" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c8">
-                    <img id="i8" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c8" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c9">
-                    <img id="i9" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="ic" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c10">
-                    <img id="i10" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c10" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c11">
-                    <img id="i11" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c11" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c12">
-                    <img id="i12" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c12" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c13">
-                    <img id="i13" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c13" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c14">
-                    <img id="i14" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c14" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c15">
-                    <img id="i15" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c15" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c16">
-                    <img id="i16" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c16" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c17">
-                    <img id="i17" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c17" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c18">
-                    <img id="i18" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c18" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c19">
-                    <img id="i19" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c19" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
-                <div id="c20">
-                    <img id="i20" src="images/princess/face-cards.jpg" alt="case1" onclick="retourner(this);">
+                <div class="cards">
+                    <img id="c20" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
             </div>
+
         </section>
+
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>

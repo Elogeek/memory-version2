@@ -1,22 +1,60 @@
-let click = 0;
+//my cards
+let cards = document.querySelectorAll(".cards");
+for(let i = 0; i < cards.length; i++) {
+    console.log(cards.length); //answer 20 it's OK
+}
+
+//face-hidden
+let facePrincess = [
+    "alice.png",
+    "anna.webp",
+    "ariel.webp",
+    "aurora.webp",
+    "blanche-neige.webp",
+    "elsa.webp",
+    "jasmine.webp",
+    "merida.webp",
+    "mulan.webp",
+    "raiponce.webp",
+];
+
+//face hidden lol manga (20 cards)
+let faceLol = [
+    "lol-1.jpg",
+    "lol-2.jpg",
+    "lol-3.jpg",
+    "lol-4.jpg",
+    "lol-5.jpg",
+    "lol6.jpg",
+    "lol-7.jpg",
+    "lol8.jpg",
+    "lol-9.jpg",
+    "lol-10.jpg"
+];
+
+//face hidden big lol (24 cards)
+let bigFace = [
+    "lol-1.jpg",
+    "lol-2.jpg",
+    "lol-3.jpg",
+    "lol-4.jpg",
+    "lol-5.jpg",
+    "lol-6.png",
+    "lol-7.jpg",
+    "lol-8.png",
+    "lol-9.jpg",
+    "lol-10.jpg",
+    "lol-11.jpg",
+    "lol-12.jpg"
+];
+
 let score = 0;
 let paire = 0;
-let retour1 = 0, retour2=0, choix='defaut';
 
-//genere disposition aléatoire des cartes
-let aleatoire =Math.floor(12*random());
-//les tableaux des dispositions
-let mix = [];
-mix[0] = [1,2,3,4,5,6,7,8];
-mix[1] = [4,3,2,1,5,6,7,8,6];
-mix[2] = [1,2,3,4,1,5,6,8,7,3,2,4,8,6,5,7];
-mix[3] = [2,8,4,6,1,3,5,7,4,7,6,8,3,2,1,5];
-mix[4] = [3,5,4,4,8,1,5,6,7,2,2,7,6,3,8,1];
-mix[5] = [1,8,2,7,5,6,3,4,6,7,2,3,5,1,8,4];
-mix[6] = [7,3,2,1,5,7,8,6,4,3,1,6,8,4,2,5];
-mix[7] = [5,5,8,7,6,1,4,3,6,4,2,1,2,8,7,3];
-mix[8] = [1,8,4,6,5,7,3,2,4,1,2,7,6,3,8,5];
-mix[9] = [5,7,4,8,8,2,3,5,4,1,6,7,2,3,6];
-mix[10] = [7,3,2,1,5,7,8,6,4,3,1,6,8,4,2,5];
-mix[11] = [5,4,7,3,1,6,5,2,8,1,7,3,4,6,2,8];
+//choice theme
+let choiceA = "defaut";
+let choiceB = "alternatif";
+
+
+
 

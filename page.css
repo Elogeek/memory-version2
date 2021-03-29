@@ -6,7 +6,7 @@ section {
 
 /* try game*/
 .game {
-    background-image: url("images/LOL-manga/back.jpg");
+    background-image: url("images/LOL-manga/back-game.jpg");
     background-size: cover;
     height: 50vw;
     width: 70%;
@@ -15,6 +15,7 @@ section {
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    overflow: hidden;
 }
 
 /*imgs here princess*/
@@ -32,19 +33,19 @@ h1,p, form {
 
 /*style header*/
 h1 {
-    color : #70fbf8;
+    color : #ffc3c5;
     text-shadow: 3px 3px black;
     letter-spacing: 4px;
 }
 
 input {
     color : white;
-    background-color: #3ec3d4;
+    background-color: #ab4170;
     width: 11rem;
     height: 2rem;
 }
 input:hover {
-    background-color: #70fbf8;
+    background-color: #ffc3c5;
     color: white;
 }
 
