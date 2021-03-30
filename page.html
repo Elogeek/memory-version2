@@ -15,19 +15,19 @@
 
         <aside>
 
-            <p>Nombre de coups jouées : </p>
-            <span id="score"></span>
+            <div class="state">
+                <p id="result">Nombre de coups jouées : 0</p>
+                <span id="score">score : 0</span>
+                <span id="time"> time : 0</span>
+            </div>
 
-            <form id="formulaire">
-                <input type="button" value="Recommencer le jeu">
-                <select id="selection">
-                    <!--<option value="defaut" selected="">Princesse</option>-->
-                    <option value="alternatif">Lol manga</option>
-                </select>
-                <!--lol (choix 20 /24)-->
-                <select id="numberCards">
-                    <option value="1">12 cartes</option>
-                    <option value="2">24 cartes</option>
+            <form name="choice-theme" method="post" onvalue="false" id="formulaire">
+                <input type="button" id="newGame" value="Recommencer le jeu">
+                <select name="myChoice" onchange="initGame(this.value)" id="theme">
+                    <!--20 cards-->
+                    <option value="1" selected="">Princesses</option>
+                    <option value="2">LOL</option>
+                    <option value="3">Lol manga </option>
                 </select>
             </form>
 
@@ -37,77 +37,66 @@
 
             <div class="game">
                 <div class="cards">
-                    <img id="c1" src="images/LOL-manga/face-carte.jpg" alt="case1" >
+                    <img src="images/LOL/fond-cards.webp" alt="case1" >
                 </div>
                 <div class="cards">
-                    <img id="c2" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c3" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c4" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c5" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c6" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c7" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c8" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c9" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c10" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c11" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c12" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c13" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img id="c13" src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c14" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c15" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c16" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c17" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c18" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c19" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c20" src="images/LOL-manga/face-carte.jpg" alt="case1">
+                    <img src="images/LOL/fond-cards.webp" alt="case1">
                 </div>
-                <div class="cards">
-                    <img id="c21" src="images/LOL-manga/face-carte.jpg" alt="case1">
-                </div>
-                <div class="cards">
-                    <img id="c22" src="images/LOL-manga/face-carte.jpg" alt="case1">
-                </div>
-                <div class="cards">
-                    <img id="c23" src="images/LOL-manga/face-carte.jpg" alt="case1">
-                </div>
-                <div class="cards">
-                    <img id="c24" src="images/LOL-manga/face-carte.jpg" alt="case1">
-                </div>
+
             </div>
 
         </section>
@@ -115,5 +104,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="theme.js"></script>
 </body>
 </html>

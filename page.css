@@ -6,7 +6,7 @@ section {
 
 /* try game*/
 .game {
-    background-image: url("images/LOL-manga/back-game.jpg");
+    background-image: url("images/LOL/back.webp");
     background-size: cover;
     height: 50vw;
     width: 70%;

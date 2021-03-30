@@ -14,16 +14,19 @@
         </header>
 
         <aside>
+            <div class="state">
+                <p id="result">Nombre de coups jouées : 0</p>
+                <span id="score">score : <span id="points">0</span></span>
+                <!--<span id="time"> time : 0</span>-->
+            </div>
 
-            <p>Nombre de coups jouées : </p>
-            <span id="score"></span>
-
-            <form id="formulaire">
-                <input type="button" value="Recommencer le jeu">
-                <select id="selection">
-                    <!--12 cards-->
-                    <option value="defaut" selected="">Princesse</option>
-                    <option value="alternatif">Lol manga</option>
+            <form name="choice-theme" method="post" onvalue="false" id="formulaire">
+                <input type="button" id="newGame" value="Recommencer le jeu">
+                <select name="myChoice" onchange="initGame(this.value)" id="theme">
+                    <!--20 cards-->
+                    <option value="1" selected="">Princesses</option>
+                    <option value="2">Lol manga</option>
+                    <option value="3">Lol manga 2</option>
                 </select>
             </form>
 
@@ -33,64 +36,64 @@
 
             <div class="game">
                 <div class="cards">
-                    <img id="c1" src="images/princess/face-cards.jpg" alt="case1">
+                    <img class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c2" src="images/princess/face-cards.jpg" alt="case1">
+                    <img class="back-face"  src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                <div class="cards">
-                    <img id="c3" src="images/princess/face-cards.jpg" alt="case1">
+                    <img class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c4" src="images/princess/face-cards.jpg" alt="case1">
+                    <img class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c5" src="images/princess/face-cards.jpg" alt="case1">
+                    <img class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c6" src="images/princess/face-cards.jpg" alt="case1">
+                    <img class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c7" src="images/princess/face-cards.jpg" alt="case1">
+                    <img class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c8" src="images/princess/face-cards.jpg" alt="case1">
+                    <img class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="ic" src="images/princess/face-cards.jpg" alt="case1">
+                    <img class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c10" src="images/princess/face-cards.jpg" alt="case1">
+                    <img class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c11" src="images/princess/face-cards.jpg" alt="case1">
+                    <img class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c12" src="images/princess/face-cards.jpg" alt="case1">
+                    <img class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c13" src="images/princess/face-cards.jpg" alt="case1">
+                    <img class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c14" src="images/princess/face-cards.jpg" alt="case1">
+                    <img class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c15" src="images/princess/face-cards.jpg" alt="case1">
+                    <img class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c16" src="images/princess/face-cards.jpg" alt="case1">
+                    <img  class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c17" src="images/princess/face-cards.jpg" alt="case1">
+                    <img  class="back-face" src="images/princess/face-cards.jpg" alt="case1">
+                </div>
+                <div class="cards" >
+                    <img  class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c18" src="images/princess/face-cards.jpg" alt="case1">
+                    <img  class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
                 <div class="cards">
-                    <img id="c19" src="images/princess/face-cards.jpg" alt="case1">
-                </div>
-                <div class="cards">
-                    <img id="c20" src="images/princess/face-cards.jpg" alt="case1">
+                    <img  class="back-face" src="images/princess/face-cards.jpg" alt="case1">
                 </div>
             </div>
 
@@ -99,5 +102,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="theme.js"></script>
 </body>
 </html>
