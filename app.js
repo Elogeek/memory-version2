@@ -42,10 +42,11 @@ mainGame();
 function initGame() {
     let teme = document.getElementById("theme");
     teme.addEventListener("click", function() {
+        switch (teme) {
 
-        teme.value = theme[1];
-        teme.value = theme[2];
-        teme.value = theme[3];
+
+        }
+
     })
 
 }
